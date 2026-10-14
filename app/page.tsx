@@ -12,7 +12,7 @@ const whatsappQrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=220x220&
   whatsappUrl
 )}`;
 
-const lojaVirtualUrl = "https://loja.nexustech.com.br";
+const lojaVirtualUrl = "/loja";
 const instagramUrl = "https://www.instagram.com/nexustech";
 const linkedinUrl = "https://www.linkedin.com/company/nexustech";
 const youtubeUrl = "https://www.youtube.com";
@@ -412,45 +412,57 @@ export default function Home() {
       </section>
 
       {/* SEÇÃO DE VÍDEOS / TECNOLOGIA */}
-      <section className="section videos">
+      {/* SEÇÃO DE METODOLOGIA E LABORATÓRIO TÉCNICO */}
+      <section className="section lab-section">
         <div className="container">
-          <div className="videos-head">
-            <div>
-              <span className="badge-pill-light">TECNOLOGIA EM FOCO</span>
-              <h2>Acompanhe Nossos Conteúdos de Tecnologia</h2>
-              <p className="section-copy text-white-muted">
-                Dicas de manutenção, análises de hardware e novidades do mundo tech para você.
+          <div className="lab-head text-center">
+            <span className="badge-pill-light">PADRÃO DE ENGENHARIA</span>
+            <h2>Metodologia de Reparo & Laboratório Especializado</h2>
+            <p className="section-copy text-white-muted mx-auto">
+              Cada equipamento passa por um rigoroso protocolo de engenharia com instrumentos de precisão
+              e estações antiestáticas dedicadas.
+            </p>
+          </div>
+
+          <div className="lab-grid">
+            <div className="lab-card">
+              <span className="lab-step">01</span>
+              <div className="lab-icon">🔬</div>
+              <h3>Diagnóstico Térmico & Microscopia</h3>
+              <p>
+                Inspeção com câmera térmica e microscópio óptico para mapear microcurtos e trilhas
+                rompidas sem intervenções destrutivas.
               </p>
             </div>
-            <a
-              className="btn btn-secondary"
-              href={youtubeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Acessar Canal de Vídeos →
-            </a>
-          </div>
-          <div className="video-grid">
-            <div className="video-card">
-              <iframe
-                title="Montagem e Manutenção de Hardware - Nexus Tech"
-                src="https://www.youtube.com/embed/66K4pUuLX2g"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
+
+            <div className="lab-card">
+              <span className="lab-step">02</span>
+              <div className="lab-icon">🧼</div>
+              <h3>Banho Químico Ultrassônico</h3>
+              <p>
+                Desoxidação profunda em cuba ultrassônica com solventes dielétricos de grau eletrônico,
+                recuperando placas atingidas por líquidos.
+              </p>
             </div>
-            <div className="video-card">
-              <iframe
-                title="Procedimento Técnico de Diagnóstico e Limpeza"
-                src="https://www.youtube.com/embed/D6965N796BE"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              />
+
+            <div className="lab-card">
+              <span className="lab-step">03</span>
+              <div className="lab-icon">⚡</div>
+              <h3>Estação BGA & Solda de Precisão</h3>
+              <p>
+                Substituição de CIs, controladores PWM e conectores SMD com estações de ar quente e
+                ferro calibrados com perfil térmico seguro.
+              </p>
+            </div>
+
+            <div className="lab-card">
+              <span className="lab-step">04</span>
+              <div className="lab-icon">📊</div>
+              <h3>4 Horas de Estresse & Laudo Digital</h3>
+              <p>
+                Bateria de benchmarks contínuos (CPU, GPU e memórias) com relatório detalhado de
+                temperaturas e estabilidade antes da entrega.
+              </p>
             </div>
           </div>
         </div>
