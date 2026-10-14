@@ -6,7 +6,7 @@ interface LogoProps {
 }
 
 export default function Logo({ size = "md", showTagline = true }: LogoProps) {
-  const iconSize = size === "sm" ? 32 : size === "lg" ? 48 : 40;
+  const iconSize = size === "sm" ? 30 : size === "lg" ? 44 : 38;
 
   return (
     <div className={`brand-logo brand-logo-${size}`}>
@@ -32,9 +32,8 @@ export default function Logo({ size = "md", showTagline = true }: LogoProps) {
         <polygon
           points="24,4 42,14 42,34 24,44 6,34 6,14"
           fill="url(#nexusGrad)"
-          rx="3"
         />
-        {/* Traçado estilizado 'N' / Nexus Node */}
+        {/* Traçado 'N' Tech */}
         <path
           d="M17 33V15L31 33V15"
           stroke="#ffffff"
@@ -42,7 +41,7 @@ export default function Logo({ size = "md", showTagline = true }: LogoProps) {
           strokeLinecap="round"
           strokeLinejoin="round"
         />
-        {/* Ponto de Conexão Tech */}
+        {/* Ponto de Conexão */}
         <circle cx="24" cy="24" r="2.8" fill="url(#nexusGlow)" />
       </svg>
       <div className="brand-logo-text">
@@ -50,7 +49,7 @@ export default function Logo({ size = "md", showTagline = true }: LogoProps) {
           NEXUS <span className="brand-name-sub">TECH</span>
         </span>
         {showTagline && (
-          <span className="brand-tagline">SOLUÇÕES EM TI • ASSISTÊNCIA ESPECIALIZADA</span>
+          <span className="brand-tagline">ASSISTÊNCIA TÉCNICA & TI</span>
         )}
       </div>
     </div>

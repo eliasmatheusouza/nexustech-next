@@ -112,7 +112,7 @@ export default function Home() {
               Serviços
             </a>
             <a href="#sobre" className="nav-link">
-              Sobre Nós
+              Sobre
             </a>
             <a href="#marcas" className="nav-link">
               Marcas
@@ -123,19 +123,17 @@ export default function Home() {
             <a href="#contato" className="nav-link">
               Contato
             </a>
-          </nav>
-
-          <div className="header-actions">
             <a
               href={lojaVirtualUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-loja"
-              title="Acessar Loja Online Nexus Tech"
+              className="nav-link nav-link-loja"
             >
-              <span className="btn-icon">🛒</span>
-              <span>Loja Online</span>
+              Loja Online ↗
             </a>
+          </nav>
+
+          <div className="header-actions">
             <ThemeToggle />
             <a
               href={whatsappUrl}
